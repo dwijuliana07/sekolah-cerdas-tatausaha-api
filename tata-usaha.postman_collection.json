@@ -1,0 +1,1370 @@
+{
+	"info": {
+		"_postman_id": "e985ab1d-c160-43cc-91a4-5b43c084c70e",
+		"name": "Tata Usaha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Buku Tamu",
+			"item": [
+				{
+					"name": "localhost:4000/services/create-tamu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "purpose",
+									"value": "Seminar",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Bambang",
+									"type": "text"
+								},
+								{
+									"key": "contact",
+									"value": "08522131",
+									"type": "text"
+								},
+								{
+									"key": "idProof",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "noOfPeople",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-05-06",
+									"type": "text"
+								},
+								{
+									"key": "inTime",
+									"value": "09:15 PM",
+									"type": "text"
+								},
+								{
+									"key": "outTime",
+									"value": "09:18 PM",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "Abc",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "a.docx",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/services/create-tamu",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"create-tamu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/services/read-tamu",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/services/read-tamu",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"read-tamu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/services/update-tamu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idVisitor",
+									"value": "32",
+									"type": "text"
+								},
+								{
+									"key": "purpose",
+									"value": "Seminar",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Febri Maulana",
+									"type": "text"
+								},
+								{
+									"key": "contact",
+									"value": "0918",
+									"type": "text"
+								},
+								{
+									"key": "idProof",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "noOfPeople",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-05-19",
+									"type": "text"
+								},
+								{
+									"key": "inTime",
+									"value": "09:15 PM",
+									"type": "text"
+								},
+								{
+									"key": "outTime",
+									"value": "09:18 PM",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "Abc",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "b.docx",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/services/update-tamu",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"update-tamu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/services/delete-tamu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idVisitor",
+									"value": "33",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/services/delete-tamu",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"delete-tamu"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Log Panggilan",
+			"item": [
+				{
+					"name": "localhost:4000/services/create-panggilan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Febri Maulana",
+									"type": "text"
+								},
+								{
+									"key": "contact",
+									"value": "08791212",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "1991-09-08",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Anak sakit",
+									"type": "text"
+								},
+								{
+									"key": "followUpDate",
+									"value": "2020-05-06",
+									"type": "text"
+								},
+								{
+									"key": "callDuration",
+									"value": "30 Menit",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "Mantap",
+									"type": "text"
+								},
+								{
+									"key": "callType",
+									"value": "Masuk",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/services/create-panggilan",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"create-panggilan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/services/read-panggilan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/services/read-panggilan",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"read-panggilan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/services/delete-panggilan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idLog",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/services/delete-panggilan",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"delete-panggilan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/services/update-panggilan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idLog",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Febri Maulana",
+									"type": "text"
+								},
+								{
+									"key": "contact",
+									"value": "08791212",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "1991-09-08",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Anak sakit",
+									"type": "text"
+								},
+								{
+									"key": "followUpDate",
+									"value": "2020-05-06",
+									"type": "text"
+								},
+								{
+									"key": "callDuration",
+									"value": "30 Menit",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "Mantap",
+									"type": "text"
+								},
+								{
+									"key": "callType",
+									"value": "Masuk",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/services/update-panggilan",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"update-panggilan"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Pengiriman Barang",
+			"item": [
+				{
+					"name": "localhost:4000/services/read-pengiriman",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/services/read-pengiriman",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"read-pengiriman"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/services/create-pengiriman",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "referenceNo",
+									"value": "025",
+									"type": "text"
+								},
+								{
+									"key": "toTitle",
+									"value": "SMA 3 TPG",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Depok",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "Undangan",
+									"type": "text"
+								},
+								{
+									"key": "fromTitle",
+									"value": "SMA 1 TPG",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-06-08",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "a.txt",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/services/create-pengiriman",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"create-pengiriman"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/services/update-pengiriman",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idPengiriman",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "referenceNo",
+									"value": "025",
+									"type": "text"
+								},
+								{
+									"key": "toTitle",
+									"value": "SMA 3 TPG",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Depok",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "Dokumen Penting",
+									"type": "text"
+								},
+								{
+									"key": "fromTitle",
+									"value": "SMA 1 TPG",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-06-08",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "a.txt",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/services/update-pengiriman",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"update-pengiriman"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/services/delete-pengiriman",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idPengiriman",
+									"value": "7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/services/delete-pengiriman",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"delete-pengiriman"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Penerimaan Barang",
+			"item": [
+				{
+					"name": "localhost:4000/services/read-penerimaan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/services/read-penerimaan",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"read-penerimaan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/services/create-penerimaan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "referenceNo",
+									"value": "029",
+									"type": "text"
+								},
+								{
+									"key": "toTitle",
+									"value": "SMA 2 TPG",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Depok",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "Undangan",
+									"type": "text"
+								},
+								{
+									"key": "fromTitle",
+									"value": "SMA 5 TPG",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-06-08",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "a.txt",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/services/create-penerimaan",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"create-penerimaan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/services/update-penerimaan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idPenerimaan",
+									"value": "14",
+									"type": "text"
+								},
+								{
+									"key": "referenceNo",
+									"value": "029",
+									"type": "text"
+								},
+								{
+									"key": "toTitle",
+									"value": "SMA 2 TPG",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Bogor",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "Dokumen",
+									"type": "text"
+								},
+								{
+									"key": "fromTitle",
+									"value": "SMA 5 TPG",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-06-08",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "a.txt",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/services/update-penerimaan",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"update-penerimaan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/services/delete-penerimaan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idPenerimaan",
+									"value": "14",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/services/delete-penerimaan",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"delete-penerimaan"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Keluhan",
+			"item": [
+				{
+					"name": "localhost:4000/services/read-keluhan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/services/read-keluhan",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"read-keluhan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/services/create-keluhan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "complaintType",
+									"value": "Biaya",
+									"type": "text"
+								},
+								{
+									"key": "source",
+									"value": "Telepon",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Febri",
+									"type": "text"
+								},
+								{
+									"key": "contact",
+									"value": "0987653232",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "febri@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-09-09",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Biaya mahal",
+									"type": "text"
+								},
+								{
+									"key": "actionTaken",
+									"value": "Melapor Kepsek",
+									"type": "text"
+								},
+								{
+									"key": "assigned",
+									"value": "TU",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "Cek",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "a.jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/services/create-keluhan",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"create-keluhan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/services/update-keluhan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idKeluhan",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "complaintType",
+									"value": "Pendaftaran",
+									"type": "text"
+								},
+								{
+									"key": "source",
+									"value": "Telepon",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Febri Maulana",
+									"type": "text"
+								},
+								{
+									"key": "contact",
+									"value": "0987653232",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "febri@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2020-09-09",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Biaya mahal",
+									"type": "text"
+								},
+								{
+									"key": "actionTaken",
+									"value": "Melapor Kepsek",
+									"type": "text"
+								},
+								{
+									"key": "assigned",
+									"value": "TU",
+									"type": "text"
+								},
+								{
+									"key": "note",
+									"value": "Cek",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "a.jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/services/update-keluhan",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"update-keluhan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:4000/services/delete-keluhan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idKeluhan",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/services/delete-keluhan",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"services",
+								"delete-keluhan"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Pengaturan",
+			"item": [
+				{
+					"name": "Tujuan",
+					"item": [
+						{
+							"name": "localhost:4000/services/read-pengaturan-tujuan",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:4000/services/read-pengaturan-tujuan",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"services",
+										"read-pengaturan-tujuan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:4000/services/create-pengaturan-tujuan",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "visitorPurpose",
+											"value": "Sidang",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Ujian",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:4000/services/create-pengaturan-tujuan",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"services",
+										"create-pengaturan-tujuan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:4000/services/update-pengaturan-tujuan",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idTujuan",
+											"value": "3",
+											"type": "text"
+										},
+										{
+											"key": "visitorPurpose",
+											"value": "Workshop",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:4000/services/update-pengaturan-tujuan",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"services",
+										"update-pengaturan-tujuan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:4000/services/delete-pengaturan-tujuan",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idTujuan",
+											"value": "7",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:4000/services/delete-pengaturan-tujuan",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"services",
+										"delete-pengaturan-tujuan"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Tipe",
+					"item": [
+						{
+							"name": "localhost:4000/services/read-pengaturan-keluhan",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:4000/services/read-pengaturan-keluhan-tipe",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"services",
+										"read-pengaturan-keluhan-tipe"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:4000/services/create-pengaturan-keluhan-tipe",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "complaintType",
+											"value": "Waktu",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Tes",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:4000/services/create-pengaturan-keluhan-tipe",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"services",
+										"create-pengaturan-keluhan-tipe"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:4000/services/update-pengaturan-keluhan-tipe",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idKeluhan",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "complaintType",
+											"value": "Belajar",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Tes tes",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:4000/services/update-pengaturan-keluhan-tipe",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"services",
+										"update-pengaturan-keluhan-tipe"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:4000/services/delete-pengaturan-keluhan-tipe",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idKeluhan",
+											"value": "5",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:4000/services/delete-pengaturan-keluhan-tipe",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"services",
+										"delete-pengaturan-keluhan-tipe"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Sumber",
+					"item": [
+						{
+							"name": "localhost:4000/services/read-pengaturan-keluhan-sumber",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:4000/services/read-pengaturan-keluhan-sumber",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"services",
+										"read-pengaturan-keluhan-sumber"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:4000/services/create-pengaturan-keluhan-sumber",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idSource",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "source",
+											"value": "Media Cetak",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Koran",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:4000/services/update-pengaturan-keluhan-sumber",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"services",
+										"update-pengaturan-keluhan-sumber"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:4000/services/update-pengaturan-keluhan-sumber",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idSource",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "source",
+											"value": "Media Cetak",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Koran",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:4000/services/update-pengaturan-keluhan-sumber",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"services",
+										"update-pengaturan-keluhan-sumber"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:4000/services/delete-pengaturan-keluhan-sumber",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "idSource",
+											"value": "5",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:4000/services/delete-pengaturan-keluhan-sumber",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"services",
+										"delete-pengaturan-keluhan-sumber"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

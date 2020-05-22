@@ -25,6 +25,7 @@ exports.createVisitor = function (req, res) {
     console.log(req.body);
 
     var sql = `INSERT INTO sekolah_cerdas.tu_visitbook (
+            source,
             purpose,
             name,
             email,
@@ -39,6 +40,7 @@ exports.createVisitor = function (req, res) {
       ) 
       VALUES
         (
+        '`+ req.body.source + `',
         '`+ req.body.purpose + `',
         '`+ req.body.name + `',
         '`+ req.body.email + `',
