@@ -136,6 +136,7 @@ exports.updateVisitor = function (req, res) {
     var sql = `UPDATE 
         sekolah_cerdas.tu_visitbook
      SET
+        source = '`+ req.body.source + `',
         purpose = '`+ req.body.purpose + `',
         name = '`+ req.body.name + `',
         email = '`+ req.body.email + `',
